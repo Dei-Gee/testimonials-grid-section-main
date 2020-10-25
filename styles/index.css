@@ -1,0 +1,172 @@
+/* FONT FACES -- start */
+@font-face {
+    font-family: BarlowSemiCondensedLight;
+    src: url(./fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Light.ttf);
+}
+
+@font-face {
+    font-family: BarlowSemiCondensedMedium;
+    src: url(./fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf);
+}
+
+@font-face {
+    font-family: BarlowSemiCondensedBold;
+    src: url(./fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Bold.ttf);
+}
+
+/* FONT FACES -- end */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: BarlowSemiCondensedLight;
+}
+
+.reviews-container, 
+.left-div, 
+.right-div, 
+.row, 
+.card {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.reviews-container {
+    background-color: hsl(210, 46%, 95%);
+}
+
+.left-div {
+    margin-top: 10vh;
+}
+
+
+/* CARDS -- start */
+.card {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 90vw;
+    border-radius: 15px;
+    padding: 35px;
+}
+
+.card-heading {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-title, 
+.card-heading > .user-info > .user-name {
+    font-family: BarlowSemiCondensedMedium;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card-heading, 
+.card-title {
+    width: 100%;
+    margin-bottom: 3.5vh;
+}
+
+.card-heading > .user-img > img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 80%;
+    height: auto;
+    margin-left: 0;
+}
+
+.card-heading > .user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-heading > .user-info > .user-name {
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    top: 22%;
+    left: 25%;
+    -ms-transform: translate(-25%, -25%);
+    transform: translate(-25%, -25%);
+}
+
+.card-heading > .user-info > .user-status {
+    color: hsl(0, 0%, 50%);
+    position: relative;
+    top: 28%;
+    left: 25%;
+    -ms-transform: translate(-25%, -25%);
+    transform: translate(-25%, -25%);
+}
+
+.card#jeanette *, 
+.card#kira * {
+    color: hsl(217, 19%, 35%);
+}
+
+.card#daniel *, 
+.card#jonathan *, 
+.card#patrick * {
+    color: hsl(0, 0%, 75%);
+}
+
+.card#jeanette > .card-title, 
+.card#kira > .card-title, 
+.card#jeanette > .card-heading > .user-info > .user-status, 
+.card#kira > .card-heading > .user-info > .user-status {
+    color: hsl(217, 19%, 35%);
+}
+
+.card#jeanette > .card-heading > .user-info > .user-status, 
+.card#kira > .card-heading > .user-info > .user-status {
+    color: hsla(217, 19%, 35%, 0.5);
+}
+
+.card#daniel > .card-title, 
+.card#jonathan > .card-title, 
+.card#patrick > .card-title, 
+.card#daniel > .card-heading > .user-info > .user-name, 
+.card#jonathan > .card-heading > .user-info > .user-name, 
+.card#patrick > .card-heading > .user-info > .user-name {
+    color: hsl(0, 0%, 100%);
+}
+
+.card#daniel
+{
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 0%;
+}
+
+.card#jonathan
+{
+    background-color:hsl(217, 19%, 35%);
+}
+
+.card#jeanette
+{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.card#patrick
+{
+    background-color: hsl(219, 29%, 14%);
+}
+
+.card#kira
+{
+    background-color: hsl(0, 0%, 100%);
+}
+/* CARDS -- end */
+
+@media only screen and (min-width: 1440px) {
+
+}

@@ -24,6 +24,15 @@
     font-family: BarlowSemiCondensedLight;
 }
 
+html, 
+body {
+    height: 100vh;
+    margin-top: 0vh;
+}
+
+.attribution { font-size: 1rem; text-align: center; margin-top: 1vh; margin-bottom: 1vh; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
 .reviews-container, 
 .left-div, 
 .right-div, 
@@ -35,12 +44,13 @@
     margin: 0 auto;
 }
 
-.reviews-container {
+body {
     background-color: hsl(210, 46%, 95%);
 }
 
-.left-div {
-    margin-top: 10vh;
+.reviews-container {
+    background-color: transparent;
+    margin-top: 5vh;
 }
 
 
@@ -106,27 +116,31 @@
     transform: translate(-25%, -25%);
 }
 
+.card-body {
+    line-height: 20px;
+}
+
 .card#jeanette *, 
 .card#kira * {
-    color: hsl(217, 19%, 35%);
+    color: hsla(217, 19%, 35%, 0.70);
 }
 
 .card#daniel *, 
 .card#jonathan *, 
 .card#patrick * {
-    color: hsl(0, 0%, 75%);
+    color: hsl(0, 0%, 75%, 0.70);
 }
 
 .card#jeanette > .card-title, 
 .card#kira > .card-title, 
-.card#jeanette > .card-heading > .user-info > .user-status, 
-.card#kira > .card-heading > .user-info > .user-status {
+.card#jeanette > .card-heading > .user-info > .user-name, 
+.card#kira > .card-heading > .user-info > .user-name{
     color: hsl(217, 19%, 35%);
 }
 
 .card#jeanette > .card-heading > .user-info > .user-status, 
 .card#kira > .card-heading > .user-info > .user-status {
-    color: hsla(217, 19%, 35%, 0.5);
+    color: hsl(217, 19%, 35%, 0.5);
 }
 
 .card#daniel > .card-title, 
@@ -136,6 +150,12 @@
 .card#jonathan > .card-heading > .user-info > .user-name, 
 .card#patrick > .card-heading > .user-info > .user-name {
     color: hsl(0, 0%, 100%);
+}
+
+.card#daniel > .card-heading > .user-info > .user-status, 
+.card#jonathan > .card-heading > .user-info > .user-status, 
+.card#patrick > .card-heading > .user-info > .user-status {
+    color: hsl(0, 0%, 100%, 0.5);
 }
 
 .card#daniel
@@ -168,5 +188,142 @@
 /* CARDS -- end */
 
 @media only screen and (min-width: 1440px) {
+    * {
+        overflow: visible;
+    }
 
+    .attribution { font-size: 1.5rem; }
+
+    body {
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    .reviews-container {
+        width: 70vw;
+        height: auto;
+    }
+    
+    .reviews-container,  
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .row, 
+    .column {
+        margin: 0;
+        padding: 0;
+    }
+
+    .column {
+        height: 100%;
+        display: flex;
+    }
+
+    .column:nth-child(1) > .card {
+        margin-left: 0;
+    }
+
+    .column:nth-child(2) > .card {
+        margin-right: 0;
+    }
+
+    .right-div > .row > .column > .card {
+        margin-right: 0;
+    }
+
+    .row {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 0vh;
+    }
+    
+    .left-div, 
+    .right-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-div {
+        width: 70%;
+    }
+
+    .right-div {
+        width: 30%;
+    }
+
+    .row:nth-child(1) > .column:nth-child(1) {
+        width: 70%;
+    }
+
+    .row:nth-child(1) > .column:nth-child(2) {
+        width: 30%;
+    }
+
+    .row:nth-child(2) {
+        margin-top: 2vh;
+    }
+
+    .row:nth-child(2) > .column:nth-child(1) {
+        width: 30%;
+    }
+
+    .row:nth-child(2) > .column:nth-child(2) {
+        width: 70%;
+    }
+
+    .card {
+        width: 98%;
+        height: auto;
+        margin-top: 0vh;
+        padding: 4vh;
+    }
+
+    .right-div, 
+    .right-div > .row, 
+    .right-div > .row > .column, 
+    .right-div > .row > .column >.card {
+        min-height: 100%;
+        margin: 0 auto;
+    }
+
+    
+    .right-div > .row {
+        width: 100%;
+    }
+
+    .right-div > .row:nth-child(1) > .column:nth-child(1) {
+        width: 80%;
+    }
+
+    .card-heading {
+        margin-bottom: 1.5vh;
+    }
+
+    .card-heading > .user-img {
+        width: 75px;
+    } 
+
+    .card-heading > .user-status {
+        width: 80%;
+    } 
+
+    .card-body {
+        font-size: 1.2rem;
+        line-height: 2.5vh;
+    }
+
+    .card-title {
+        font-size: 1.75rem;
+        margin-bottom: 2.5vh;
+    }
+
+    .card#jeanette, 
+    .card#kira {
+        -webkit-box-shadow: 96px 135px 111px -100px hsla(217, 19%, 35%, 0.5);
+        -moz-box-shadow: 96px 135px 111px -100px hsla(217, 19%, 35%, 0.5);
+        box-shadow: 96px 135px 111px -100px  hsla(217, 19%, 35%, 0.5);
+    }
+    
 }

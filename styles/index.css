@@ -22,6 +22,7 @@
     padding: 0;
     overflow-x: hidden;
     font-family: BarlowSemiCondensedLight;
+    font-size: 13px;
 }
 
 html, 
@@ -50,7 +51,7 @@ body {
 
 .reviews-container {
     background-color: transparent;
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 
 
@@ -74,7 +75,7 @@ body {
 }
 
 .card-title {
-    font-size: 1.25rem;
+    font-size: 17px;
 }
 
 .card-heading, 
@@ -192,15 +193,13 @@ body {
         overflow: visible;
     }
 
-    .attribution { font-size: 1rem; }
-
     body {
         overflow: hidden;
         overflow-y: scroll;
     }
 
     .reviews-container {
-        width: 70vw;
+        width: 90vw;
         height: auto;
     }
     
@@ -310,12 +309,12 @@ body {
     } 
 
     .card-body {
-        font-size: 1rem;
+        font-size: .75rem;
         line-height: 1.8vh;
     }
 
     .card-title {
-        font-size: 1.25rem;
+        font-size: 1rem;
         margin-bottom: 2.5vh;
     }
 

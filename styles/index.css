@@ -30,7 +30,7 @@ body {
     margin-top: 0vh;
 }
 
-.attribution { font-size: 1rem; text-align: center; margin-top: 1vh; margin-bottom: 1vh; }
+.attribution { font-size: 13px; text-align: center; margin-top: 1vh; margin-bottom: 1vh; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .reviews-container, 
@@ -74,7 +74,7 @@ body {
 }
 
 .card-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .card-heading, 
@@ -192,7 +192,7 @@ body {
         overflow: visible;
     }
 
-    .attribution { font-size: 1.5rem; }
+    .attribution { font-size: 1rem; }
 
     body {
         overflow: hidden;
@@ -200,7 +200,7 @@ body {
     }
 
     .reviews-container {
-        width: 90vw;
+        width: 70vw;
         height: auto;
     }
     
@@ -310,12 +310,12 @@ body {
     } 
 
     .card-body {
-        font-size: 1.2rem;
-        line-height: 2.5vh;
+        font-size: 1rem;
+        line-height: 1.8vh;
     }
 
     .card-title {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
         margin-bottom: 2.5vh;
     }
 
